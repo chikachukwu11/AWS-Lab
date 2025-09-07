@@ -31,7 +31,7 @@ Key learning objectives:
   - Navigate to services the Amazon Elastic Compute Cloud (EC2).
   - Hit the Orange "Launch Instance" Button on the right.
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/z4u6X30.png" height="80%" width="80%" alt="AWS-Lab"/>
 
 3. <b>Set up a Windows Server</b>
   - Name the server (Example: Demo Lab AD Server).
@@ -41,13 +41,13 @@ Key learning objectives:
   - Create Key Pair and save it.
   - Leave everything else as default and hit the orange "Launch Instance" Button.
     
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/SFA2RPk.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/TbBg27D.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/qelUJKR.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/myNRrZE.png" height="80%" width="80%" alt="AWS-Lab"/>
 
 4. <b>Remote into EC2 Instance of Windows Server 2025</b>
   - Navigate back to Amazon Elastic Compute Cloud (EC2) dashboard.
@@ -56,13 +56,11 @@ Key learning objectives:
   - Download RDP File or record IP to remote in
   - Use the windows app on MacOS to remote into EC2 Instance
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/Bw6o8Up.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/05xWxWe.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
-
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/clyLoqt.png" height="80%" width="80%" alt="AWS-Lab"/>
 
 5. <b>Install and configure Active Directory Domain Services (AD DS), promote the VM to a Domain Controller and establish a domain.</b>
   - Open Powershell and run two commands one at a time.
@@ -70,13 +68,13 @@ Key learning objectives:
   - InstallADDSForest -DomainName "lab.local" -CreateDnsDelegation:$false -DatabasePath "C:\Windows\NTDS" -DomainMode "WinThreshold" -ForestMode "WinThreshold" -InstallDns:$true -LogPath "C:\Windows\NTDS" -NoRebootOnCompletion:$false -SysvolPath "C:\Windows\SYSVOL" -Force
   - After rebooting using the GUI search "Active Directory Administrative Center"
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/6Xp0v9N.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/TUpjNb9.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/CKce84M.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/zzQaDHD.png" height="80%" width="80%" alt="AWS-Lab"/>
 
 6. <b>Create New Users & Groups (Powershell or GUI)</b>
   - Using the GUI Search Active Directory Users & Groups. Add users, create security groups and computers here.
@@ -91,14 +89,14 @@ New-ADUser -Name "John Doe" -GivenName "John" -Surname "Doe" '
 New-ADGroup -Name "Helpdesk" -GroupScope Global -GroupCategory Security -Path "DC=lab,DC=local"
 Add-ADGroupMember -Identity "Helpdesk" -Members "john"
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/48o67Ro.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/0dHlNCm.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/cRxFcLr.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/SUksJfD.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/j4tExoV.png" height="80%" width="80%" alt="AWS-Lab"/>
 
-<img src="" height="80%" width="80%" alt="AzureSiemLab"/>
+<img src="https://i.imgur.com/cPgAEOp.png" height="80%" width="80%" alt="AWS-Lab"/>
